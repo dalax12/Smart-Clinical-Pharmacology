@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Clinical Pharmacology - Advanced Drug Development Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 glass">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center animate-pulse-custom">
+                        <i class="fas fa-pills text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold font-poppins text-gray-800">Smart Clinical Pharmacology</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 font-medium">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Services</a>
+                    <a href="#expertise" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Expertise</a>
+                    <a href="#portfolio" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Portfolio</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#home" class="block text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
+                <a href="#services" class="block text-gray-700 hover:text-blue-600">Services</a>
+                <a href="#expertise" class="block text-gray-700 hover:text-blue-600">Expertise</a>
+                <a href="#portfolio" class="block text-gray-700 hover:text-blue-600">Portfolio</a>
+                <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="particles">
+            <div class="particle" style="left: 10%; top: 10%; width: 4px; height: 4px; animation-delay: 0s;"></div>
+            <div class="particle" style="left: 20%; top: 60%; width: 6px; height: 6px; animation-delay: 1s;"></div>
+            <div class="particle" style="left: 60%; top: 20%; width: 8px; height: 8px; animation-delay: 2s;"></div>
+            <div class="particle" style="left: 80%; top: 70%; width: 5px; height: 5px; animation-delay: 3s;"></div>
+            <div class="particle" style="left: 30%; top: 80%; width: 7px; height: 7px; animation-delay: 4s;"></div>
+        </div>
+
+        <div class="absolute inset-0 bg-gradient-primary opacity-10"></div>
+        
+        <div class="container mx-auto px-6 z-10">
+            <div class="text-center animate-fadeInUp">
+                <h1 class="text-5xl md:text-7xl font-bold font-poppins text-gray-800 mb-6">
+                    Smart Clinical
+                    <span class="text-transparent bg-clip-text bg-gradient-secondary">Pharmacology</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
+                    Advancing drug development through innovative clinical pharmacology solutions, 
+                    cutting-edge research methodologies, and data-driven insights for pharmaceutical excellence.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <button class="interactive-btn bg-gradient-secondary text-white px-8 py-4 rounded-full font-semibold hover:shadow-intense transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Explore Our Services
+                    </button>
+                    <button class="interactive-btn border-2 border-blue-500 text-blue-500 px-8 py-4 rounded-full font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
+                        <i class="fas fa-play mr-2"></i>
+                        Watch Demo
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="500">0</div>
+                        <p class="text-gray-600">Clinical Trials Supported</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="95">0</div>
+                        <p class="text-gray-600">Success Rate %</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="150">0</div>
+                        <p class="text-gray-600">Expert Partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-gray-400 text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
+                    About Our <span class="text-transparent bg-clip-text bg-gradient-secondary">Innovation</span>
+                </h2>
+                <div class="section-divider mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We are pioneering the future of clinical pharmacology through advanced research, 
+                    innovative methodologies, and strategic partnerships with leading pharmaceutical companies worldwide.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-slideInLeft">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/794eded1-08de-4f9f-9516-264dd54b464f.png" alt="Modern pharmaceutical laboratory with advanced equipment, scientists in white coats conducting clinical research, state-of-the-art microscopes and testing apparatus in bright sterile environment" class="rounded-lg shadow-elegant hover-lift" />
+                </div>
+
+                <div class="animate-slideInRight">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6">Leading Clinical Pharmacology Excellence</h3>
+                    <p class="text-gray-600 mb-6">
+                        Our multidisciplinary team combines decades of experience in clinical pharmacology, 
+                        bioanalytical sciences, and regulatory affairs to deliver comprehensive solutions 
+                        that accelerate drug development and ensure patient safety.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gradient-secondary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-microscope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Advanced Research Methodologies</h4>
+                                <p class="text-gray-600">Cutting-edge analytical techniques and innovative study designs</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gradient-secondary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-shield-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Regulatory Compliance</h4>
+                                <p class="text-gray-600">Full compliance with FDA, EMA, and global regulatory standards</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gradient-secondary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-users text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Expert Collaboration</h4>
+                                <p class="text-gray-600">Global network of clinical pharmacology specialists</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
+                    Our <span class="text-transparent bg-clip-text bg-gradient-secondary">Services</span>
+                </h2>
+                <div class="section-divider mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive clinical pharmacology services designed to optimize drug development 
+                    and ensure successful regulatory submissions.
+                </p>
+            </div>
+
+            <div class="responsive-grid">
+                <div class="service-card rounded-lg p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6 animate-float">
+                        <i class="fas fa-flask text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Pharmacokinetic Studies</h3>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive PK analysis including absorption, distribution, metabolism, 
+                        and elimination studies with advanced bioanalytical methods.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Single & Multiple Dose Studies</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Bioequivalence Studies</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Food Effect Studies</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Drug-Drug Interaction Studies</li>
+                    </ul>
+                </div>
+
+                <div class="service-card rounded-lg p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6 animate-float" style="animation-delay: 0.5s;">
+                        <i class="fas fa-heartbeat text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Pharmacodynamic Analysis</h3>
+                    <p class="text-gray-600 mb-6">
+                        Advanced PD modeling and simulation to understand drug effects, 
+                        dose-response relationships, and therapeutic windows.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>PK/PD Modeling</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Biomarker Analysis</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Dose Optimization</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Safety Pharmacology</li>
+                    </ul>
+                </div>
+
+                <div class="service-card rounded-lg p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6 animate-float" style="animation-delay: 1s;">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Clinical Trial Design</h3>
+                    <p class="text-gray-600 mb-6">
+                        Strategic clinical trial design and protocol development optimized 
+                        for regulatory approval and market success.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Protocol Development</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Statistical Planning</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Regulatory Strategy</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Risk Assessment</li>
+                    </ul>
+                </div>
+
+                <div class="service-card rounded-lg p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6 animate-float" style="animation-delay: 1.5s;">
+                        <i class="fas fa-database text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Data Analytics & Modeling</h3>
+                    <p class="text-gray-600 mb-6">
+                        Advanced statistical analysis and population pharmacokinetic modeling 
+                        using cutting-edge computational methods.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Population PK Modeling</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Machine Learning Applications</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Predictive Analytics</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Real-World Evidence</li>
+                    </ul>
+                </div>
+
+                <div class="service-card rounded-lg p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6 animate-float" style="animation-delay: 2s;">
+                        <i class="fas fa-file-medical text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Regulatory Submissions</h3>
+                    <p class="text-gray-600 mb-6">
+                        Expert regulatory support for IND, NDA, and global submissions 
+                        with comprehensive clinical pharmacology sections.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>IND/NDA Submissions</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Scientific Writing</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Regulatory Meetings</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Global Harmonization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card rounded-lg p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6 animate-float" style="animation-delay: 2.5s;">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Training & Consulting</h3>
+                    <p class="text-gray-600 mb-6">
+                        Professional development programs and strategic consulting 
+                        to enhance your team's clinical pharmacology capabilities.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Team Training Programs</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Strategic Consulting</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Best Practices Workshops</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Mentorship Programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
+                    Our <span class="text-transparent bg-clip-text bg-gradient-secondary">Expertise</span>
+                </h2>
+                <div class="section-divider mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Deep therapeutic area expertise across multiple disciplines with proven track record 
+                    in drug development and regulatory success.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="animate-slideInLeft">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-8">Therapeutic Areas</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-gray-800">Oncology</span>
+                                <span class="text-blue-600 font-bold">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="progress-bar rounded-full" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-gray-800">Cardiovascular</span>
+                                <span class="text-blue-600 font-bold">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="progress-bar rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-gray-800">Neurology</span>
+                                <span class="text-blue-600 font-bold">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="progress-bar rounded-full" style="width: 88%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-gray-800">Immunology</span>
+                                <span class="text-blue-600 font-bold">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="progress-bar rounded-full" style="width: 92%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold text-gray-800">Infectious Diseases</span>
+                                <span class="text-blue-600 font-bold">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="progress-bar rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-slideInRight">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0354edac-def0-4d74-b217-ece7acd86f59.png" alt="Advanced pharmaceutical research facility showing multiple therapeutic areas including oncology lab with cancer cell cultures, cardiovascular testing equipment, neurology brain imaging systems, and immunology assay platforms in modern clinical setting" class="rounded-lg shadow-elegant hover-lift" />
+                </div>
+            </div>
+
+            <div class="mt-20">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Technology Stack</h3>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Cutting-edge technologies and methodologies that power our clinical pharmacology solutions.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center hover-glow p-6 rounded-lg">
+                        <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-robot text-white text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">AI/ML Analytics</h4>
+                        <p class="text-gray-600 text-sm">Machine learning algorithms for predictive modeling</p>
+                    </div>
+
+                    <div class="text-center hover-glow p-6 rounded-lg">
+                        <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cloud text-white text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Cloud Computing</h4>
+                        <p class="text-gray-600 text-sm">Scalable cloud infrastructure for data processing</p>
+                    </div>
+
+                    <div class="text-center hover-glow p-6 rounded-lg">
+                        <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-dna text-white text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Genomics</h4>
+                        <p class="text-gray-600 text-sm">Pharmacogenomics and personalized medicine</p>
+                    </div>
+
+                    <div class="text-center hover-glow p-6 rounded-lg">
+                        <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cube text-white text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">3D Modeling</h4>
+                        <p class="text-gray-600 text-sm">Advanced molecular modeling and simulation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
+                    Success <span class="text-transparent bg-clip-text bg-gradient-secondary">Stories</span>
+                </h2>
+                <div class="section-divider mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Showcasing our successful partnerships and breakthrough achievements 
+                    in clinical pharmacology and drug development.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="md:text-right animate-slideInLeft">
+                            <div class="bg-white rounded-lg p-8 shadow-elegant hover-lift">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Breakthrough Oncology Drug</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Led the clinical pharmacology strategy for a novel oncology compound, 
+                                    resulting in FDA breakthrough therapy designation and accelerated approval.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Phase I-III</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">FDA Approved</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Breakthrough Therapy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animate-slideInRight">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/582555c2-e39f-4bc5-abf3-36ad007173a4.png" alt="Cutting-edge oncology research laboratory with scientists analyzing breakthrough cancer therapy compounds using advanced molecular imaging and precision medicine technologies" class="rounded-lg shadow-elegant hover-lift" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="animate-slideInLeft">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c13b2fe4-d72c-482b-969c-00a21af60c55.png" alt="Advanced cardiovascular clinical trial facility showing ECG monitoring equipment, cardiac imaging systems, and clinical researchers conducting heart disease drug studies" class="rounded-lg shadow-elegant hover-lift" />
+                        </div>
+                        <div class="animate-slideInRight">
+                            <div class="bg-white rounded-lg p-8 shadow-elegant hover-lift">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Cardiovascular Innovation</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Developed innovative PK/PD models for a first-in-class cardiovascular drug, 
+                                    optimizing dosing regimens and improving patient outcomes.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">First-in-Class</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">PK/PD Modeling</span>
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Dose Optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="md:text-right animate-slideInLeft">
+                            <div class="bg-white rounded-lg p-8 shadow-elegant hover-lift">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Rare Disease Program</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Successfully supported orphan drug development for a rare neurological condition, 
+                                    achieving regulatory approval across multiple global markets.
+                                </p>
+                                <div class="flex flex-wrap gap-2 md:justify-end">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Orphan Drug</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Global Approval</span>
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Rare Disease</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animate-slideInRight">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8c4f1557-c75b-4ef1-841b-55d8cdab6e80.png" alt="Specialized rare disease research center with advanced neurological testing equipment, genetic analysis systems, and researchers working on orphan drug development for neurological conditions" class="rounded-lg shadow-elegant hover-lift" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-lg p-8 shadow-elegant hover-lift">
+                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="50">0</div>
+                        <p class="text-gray-600">Successful Drug Approvals</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-8 shadow-elegant hover-lift">
+                        <div class="text-4xl font-bold text-green-600 mb-2" data-count="25">0</div>
+                        <p class="text-gray-600">Breakthrough Designations</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-8 shadow-elegant hover-lift">
+                        <div class="text-4xl font-bold text-purple-600 mb-2" data-count="100">0</div>
+                        <p class="text-gray-600">Global Partnerships</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-8 shadow-elegant hover-lift">
+                        <div class="text-4xl font-bold text-orange-600 mb-2" data-count="15">0</div>
+                        <p class="text-gray-600">Years of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
+                    Get In <span class="text-transparent bg-clip-text bg-gradient-secondary">Touch</span>
+                </h2>
+                <div class="section-divider mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to accelerate your drug development program? Contact our experts 
+                    for personalized clinical pharmacology solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="animate-slideInLeft">
+                    <div class="bg-gradient-primary rounded-lg p-8 text-white">
+                        <h3 class="text-3xl font-bold mb-8">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Address</h4>
+                                    <p>Madrid, Spain</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p>+34 650 73 98 00</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p>smartclinicalpharmacology@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Business Hours</h4>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM CET</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
+                                    <i class="fab fa-linkedin text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
+                                    <i class="fab fa-twitter text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
+                                    <i class="fab fa-researchgate text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
+                                    <i class="fas fa-globe text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-slideInRight">
+                    <form class="bg-gray-50 rounded-lg p-8 shadow-elegant">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="firstName" class="block text-gray-700 font-semibold mb-2">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Your first name">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-gray-700 font-semibold mb-2">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Your last name">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="your@email.com">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="company" class="block text-gray-700 font-semibold mb-2">Company</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Your company name">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-semibold mb-2">Service Interest</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                                <option value="">Select a service</option>
+                                <option value="pk-studies">Pharmacokinetic Studies</option>
+                                <option value="pd-analysis">Pharmacodynamic Analysis</option>
+                                <option value="trial-design">Clinical Trial Design</option>
+                                <option value="data-analytics">Data Analytics & Modeling</option>
+                                <option value="regulatory">Regulatory Submissions</option>
+                                <option value="consulting">Training & Consulting</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Tell us about your project and requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full interactive-btn bg-gradient-secondary text-white py-4 rounded-lg font-semibold hover:shadow-intense transition-all duration-300 transform hover:scale-105">
+                            <span class="loading-dots hidden">
+                                Sending<span>.</span><span>.</span><span>.</span>
+                            </span>
+                            <span class="send-text">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Message
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-pills text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold font-poppins">Smart Clinical Pharmacology</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Advancing drug development through innovative clinical pharmacology solutions 
+                        and cutting-edge research methodologies.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-researchgate text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Pharmacokinetic Studies</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pharmacodynamic Analysis</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Clinical Trial Design</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Data Analytics</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Regulatory Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Expertise</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Oncology</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cardiovascular</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Neurology</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Immunology</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Rare Diseases</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Madrid, Spain</p>
+                        <p><i class="fas fa-phone mr-2"></i>+34 650 73 98 00</p>
+                        <p><i class="fas fa-envelope mr-2"></i>smartclinicalpharmacology@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Smart Clinical Pharmacology. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-secondary text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 pointer-events-none z-50">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
